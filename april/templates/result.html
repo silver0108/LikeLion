@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결과값</title>
+
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>결과값</h1>
+  <hr />
+
+  <!--
+
+    word_count = [(word1, count1), (word2, count2),...]
+
+    for word, count in word_count:
+
+  -->
+
+  {% for word, count in word_count %}
+
+  <!-- 중괄호를 한번 더 씌움으로써 변수라는 것을 알려줌-->
+  {{word}}: {{count}} <br>
+
+  <!-- 끝나는 지점을 알려줘야함-->
+  {% endfor %}
+
+</body>
+
+</html>
